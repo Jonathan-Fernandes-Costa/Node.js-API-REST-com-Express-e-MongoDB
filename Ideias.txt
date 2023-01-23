@@ -1,0 +1,14 @@
+Sitema de site de loja online:
+CRUD de produtos, que cada produto vai ter um nome, um categoria, um tipo e uma quantidade disponivel
+Crud de Usuarios, que cada usuario vai ter um nome, endereço, telefone, email, cpf e ele vai poder comprar produtos
+CRUD de Funcionarios, que cada funcionario vai ter um nome, endereço, telefone, email e cpf e ele vai poder adicionar novos produtos e excluir produtos
+
+Sitema para a Locadora de Carros
+CRUD de Carros com seus status, nome, modelo
+CRUD de Usuarios com seu nome, email, telefone e cpf, que vai poder alugar e devolver carros
+CRUD de funcionario com nome, email, telefone, cpf e endereço, que vai poder adicionar ou remover carros do estoque
+
+Sistema para gerenciamento de estoque:
+CRUD de produtos, que cada prooduto vai ter um nome, um preço e a quantidade disponivel
+CRUD de funcionarios, que vai ter um nome, endereço, telefone e email, que vai poder adicionar, atualizar ou remover produtos
+
