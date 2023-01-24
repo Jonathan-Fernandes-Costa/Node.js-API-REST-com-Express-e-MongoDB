@@ -2,7 +2,7 @@ import usuarios from "../models/Usuario.js"
 
 class UsuariosController {
     //READ
-    static listarusuarios = (req, res) => {
+    static listarUsuarios = (req, res) => {
         usuarios.find()
             .exec((err, usuarios) => {
                 res.status(200).json(usuarios)
