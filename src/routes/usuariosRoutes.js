@@ -10,4 +10,5 @@ router
     .post("/usuarios", UsuariosController.cadastrarUsuario)
     .put("/usuarios/:id", UsuariosController.atualizarUsuario)
     .delete("/usuarios/:id", UsuariosController.deleteUsuario)
-    
+
+export default router

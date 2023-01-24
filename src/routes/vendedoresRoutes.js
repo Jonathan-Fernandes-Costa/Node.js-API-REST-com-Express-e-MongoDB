@@ -4,10 +4,11 @@ import VendedoresController from '../controllers/vendedorController.js';
 const router = express.Router()
 
 router
-    .get("/usuarios", VendedoresController.listarUsuarios)
-    .get("/usuarios/busca", VendedoresController.listarUsuarioNome)
-    .get("/usuarios/:id", VendedoresController.listarUsuarioId)
-    .post("/usuarios", VendedoresController.cadastrarUsuario)
-    .put("/usuarios/:id", VendedoresController.atualizarUsuario)
-    .delete("/usuarios/:id", VendedoresController.deleteUsuario)
+    .get("/vendedores", VendedoresController.listarVendedores)
+    .get("/vendedores/busca", VendedoresController.listarVendedorNome)
+    .get("/vendedores/:id", VendedoresController.listarVendedorId)
+    .post("/vendedores", VendedoresController.cadastrarVendedor)
+    .put("/vendedores/:id", VendedoresController.atualizarVendedor)
+    .delete("/vendedores/:id", VendedoresController.deleteVendedor)
     
+export default router
