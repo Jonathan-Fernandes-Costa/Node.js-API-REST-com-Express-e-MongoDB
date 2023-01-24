@@ -4,11 +4,11 @@ import express from "express";
 const router = express.Router();
 
 router
-    .get("/usuario/:compradorid", PedidosController.listarPedidosUser)
-    .get("/vendedor/:vendedorid", PedidosController.listarPedidosVendedor)
-    .post("/usuario", PedidosController.cadastrarPedido)
-    .put("/usuario/:id", PedidosController.atualizarPedido)
-    .delete("/usuario/:id", PedidosController.deletePedido)
-    .put("/vendedor/:id", PedidosController.atualizarPedido)
-    .delete("/vendedor/:id", PedidosController.deletePedido)
+    .get("/usuarios/pedidos/:compradorid", PedidosController.listarPedidosUser)
+    .get("/vendedores/pedidos/:vendedorid", PedidosController.listarPedidosVendedor)
+    .post("/usuarios/pedido", PedidosController.cadastrarPedido)
+    .put("/usuarios/pedido/:id", PedidosController.atualizarPedido)
+    .delete("/usuarios/pedido/:id", PedidosController.deletePedido)
+    .put("/vendedores/pedido/:id", PedidosController.atualizarPedido)
+    .delete("/vendedores/pedido/:id", PedidosController.deletePedido)
 export default router

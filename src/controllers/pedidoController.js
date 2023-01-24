@@ -3,9 +3,10 @@ import pedidos from "../models/Pedido.js"
 class PedidosController {
     //READ
     static listarPedidosUser = (req, res) => {
-        const { compradorid } = req.params.compradorid
+        const compradorid = req.params.compradorid
+        console.log(compradorid)
         pedidos.find({ compradorid: compradorid })
-            .populate("vendedorid", "nome", "email")
+            .populate("vendedorid", "nome")
             .populate("produtoid")
             .exec((err, pedidos) => {
                 if (err) {
@@ -16,9 +17,9 @@ class PedidosController {
             })
     }
     static listarPedidosVendedor = (req, res) => {
-        const { vendedorid } = req.params.vendedorid
+        const vendedorid = req.params.vendedorid
         pedidos.find({ vendedorid: vendedorid })
-            .populate("compradorid", "nome", "email")
+            .populate("compradorid", "nome")
             .populate("produtoid")
             .exec((err, pedidos) => {
                 if (err) {
