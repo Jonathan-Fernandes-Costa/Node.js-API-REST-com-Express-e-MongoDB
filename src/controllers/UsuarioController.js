@@ -32,7 +32,7 @@ class UsuariosController {
     }
     //POST
     static cadastrarUsuario = (req, res) => {
-        let usuario = req.body
+        let usuario = new usuarios(req.body)
         usuarios.save((err) => {
             if (err) {
                 res.status(500).send({ message: `${err.message} - Falha ao cadastrar Usuario` })
