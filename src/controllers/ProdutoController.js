@@ -36,7 +36,7 @@ class ProdutosController {
     //POST
     static cadastrarProduto = (req, res) => {
         let produto = new produtos(req.body)
-        produtos.save((err) => {
+        produto.save((err) => {
             if (err) {
                 res.status(500).send({ message: `${err.message} - Falha ao cadastrar produto` })
             } else {

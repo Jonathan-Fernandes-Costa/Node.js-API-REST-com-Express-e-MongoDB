@@ -33,7 +33,7 @@ class VendedoresController {
     //POST
     static cadastrarVendedor = (req, res) => {
         let vendedor = new vendedores(req.body)
-        vendedores.save((err) => {
+        vendedor.save((err) => {
             if (err) {
                 res.status(500).send({ message: `${err.message} - Falha ao cadastrar Vendedor` })
             } else {
