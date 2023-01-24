@@ -1,5 +1,5 @@
 import express from 'express';
-import produtos from './produtoRoutes.js';
+import produtos from './produtosRoutes.js';
 import usuarios from './usuariosRoutes.js';
 import vendedores from './vendedoresRoutes.js';
 const routes = (app) =>{

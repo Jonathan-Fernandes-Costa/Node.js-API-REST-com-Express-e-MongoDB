@@ -9,6 +9,6 @@ router
     .get("/produtos/:id", ProdutosController.listarProdutoId)
     .post("/produtos", ProdutosController.cadastrarProduto)
     .put("/produtos/:id", ProdutosController.atualizarProduto)
-    .delete("/produto/:id", ProdutosController.deleteProduto)
+    .delete("/produtos/:id", ProdutosController.deleteProduto)
 
 export default router
