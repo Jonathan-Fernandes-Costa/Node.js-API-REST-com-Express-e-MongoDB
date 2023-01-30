@@ -6,9 +6,9 @@ const router = express.Router();
 router
     .get("/usuarios/pedidos/:compradorid", PedidosController.listarPedidosUser)
     .get("/vendedores/pedidos/:vendedorid", PedidosController.listarPedidosVendedor)
-    .post("/usuarios/pedido", PedidosController.cadastrarPedido)
-    .put("/usuarios/pedido/:id", PedidosController.atualizarPedido)
-    .delete("/usuarios/pedido/:id", PedidosController.deletePedido)
-    .put("/vendedores/pedido/:id", PedidosController.atualizarPedido)
-    .delete("/vendedores/pedido/:id", PedidosController.deletePedido)
+    .post("/usuarios/pedidos", PedidosController.cadastrarPedido)
+    .put("/usuarios/pedidos/:id", PedidosController.atualizarPedido)
+    .delete("/usuarios/pedidos/:id", PedidosController.deletePedido)
+    .put("/vendedores/pedidos/:id", PedidosController.atualizarPedido)
+    .delete("/vendedores/pedidos/:id", PedidosController.deletePedido)
 export default router
